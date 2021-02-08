@@ -1,0 +1,167 @@
+.post{
+  font-size: 1rem;
+}
+
+.post a{
+  text-decoration: underline;
+}
+
+.post__title{
+  margin: 150px 0 10px 0;
+  font-size: 2em;
+}
+
+.post__info{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8em;
+  flex-direction: column;
+  
+}
+.post__property{
+  display: inline;
+  margin-right:  10px ;
+  margin-bottom: 10px;
+}
+
+.post__property-name{
+    font-weight: 700;
+}
+
+.post-categories{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+.post-categories li{
+  margin-bottom: 10px;
+}
+.post-categories a {
+  height: 100%;
+  background-color: #eee;
+  padding: 2px 7px;
+}
+
+.archive__post{
+  margin: 4em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.archive__post-thumbnail{
+  display: none;
+  width: auto;
+  height: auto;
+}
+
+.button-more {
+  
+  height: 40px;
+  margin: 20px 0;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.archive__post-button{
+  margin: 20px 0;
+  display: inline-block;
+}
+
+
+.box{
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid red;
+}
+
+
+.nav-links {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+
+.page-numbers {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  padding: 0.5em;
+  font-weight: 900;
+  margin: 0 10px;
+}
+
+
+.page-numbers.current,
+.page-numbers.dots{
+  font-weight: 400;
+}
+.page-numbers.current,
+.next.page-numbers,
+.prev.page-numbers{
+  color: #fff;
+  background-color:  #1d2959;
+    
+}
+
+  .next.page-numbers,
+  .prev.page-numbers {
+    margin: 1em 0;
+    flex: 100%;
+  }
+
+@media (min-width:1000px) {
+  .post__info {
+    flex-direction: row;
+  }
+
+  .post__title {
+    font-size: 3em;
+  }
+
+  .post-categories li {
+    margin-right: 10px;
+  }
+
+  .archive__post-body{
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+  }
+  .archive__post-thumbnail{
+    display: block;
+    margin: 0 40px 0 0;
+    max-width: 150px;
+    max-height: 150px;
+    
+  }
+  .nav-links {
+    
+    justify-content: flex-start;
+  }
+
+
+    .next.page-numbers {
+      margin: 0 0 0 1em;
+   
+    }
+
+    .prev.page-numbers {
+      margin: 0 1em 0 0;
+   
+    }
+
+    .next.page-numbers,
+    .prev.page-numbers{
+      flex: auto;
+      max-width: 150px;
+    }
+
+}

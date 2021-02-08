@@ -1,0 +1,59 @@
+.hamburger{
+  padding: 5px;
+  margin: 10px 5px;
+  width: 35px;
+  position: fixed;
+  z-index: 11;
+}
+
+.hamburger__box{
+  color: lime;
+  width: 100%;
+
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger__box::before,
+.hamburger__box::after {
+  background-color: #1d2959;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  content: "";
+
+  top: -16px;
+  left: 0;
+  
+  transition-property: transform background-color;
+  transition-delay: 100ms;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+
+}
+
+.hamburger__box::after{
+  top: 0px;
+}
+
+.hamburger--closed .hamburger__box::after,
+.hamburger--closed .hamburger__box::before{
+  background-color: #fff;
+    
+  }
+
+.hamburger--closed .hamburger__box::before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger--closed .hamburger__box::after {
+  
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+@media (min-width:1000px) {
+  .hamburger{
+    display: none;
+  }
+}
