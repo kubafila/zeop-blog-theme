@@ -13,7 +13,7 @@
 This is WordPress theme for [Zeop.pl Blog](http://zeop.pl/blog).
 
 ## Design
-This project is designed by [opanujchaos.pl](http://opanujchaos.pl/)
+This project was designed by [opanujchaos.pl](http://opanujchaos.pl/)
 
 ## Technologies
 Project is created with:
